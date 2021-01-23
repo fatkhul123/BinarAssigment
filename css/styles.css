@@ -1,4 +1,297 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@600;700&display=swap');
+:root {
+  --input-padding-x: .75rem;
+  --input-padding-y: .70rem;
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(0, 0, 0);
+    scroll-behavior: smooth;
+  }
+  .navbar{
+      background: #000000;
+      opacity: 0.7;
+      }
+  .nav-link{
+      color: white;
+  }
+  
+  #firstlayout{
+    background-image:     linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.993)), url("assets/img/1.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+      background-attachment: fixed;
+    box-shadow: 30px 30px 30px 30px rgb(0, 0, 0,0.9);
+  }
+  #layout-2{
+    /* The image used */
+    background-image:     linear-gradient(to bottom, rgba(0, 0, 0, 0.918), rgba(0, 0, 0, 0.705)), url("assets/img/2.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+      background-attachment: fixed;
+      box-shadow: 30px 0px 30px 30px rgb(0, 0, 0,0.9);
+    padding:10% 5%;
+  }
+  #layout-3{
+    /* The image used */
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgb(0, 0, 0)) , url("assets/img/3.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+      background-attachment: fixed;
+      box-shadow: 30px 0px 30px 30px rgb(0, 0, 0,0.9);
+    padding:10% 5%;
+  }
+  #layout-4{
+    /* The image used */
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.274), rgb(0, 0, 0) ), 
+                                    url("assets/img/4.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+      background-attachment: fixed;
+      box-shadow: 30px 0px 30px 30px rgb(0, 0, 0,0.9);
+    padding:3%;
+  }
+  #layout-5{
+    /* The image used */
+    background-image:     linear-gradient(to bottom, rgba(0, 0, 0, 0.692), rgba(255, 255, 255, 0)), linear-gradient(to right, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.753)), url("assets/img/5.png");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+      background-attachment: fixed;
+      box-shadow: 30px 0px 30px 30px rgb(0, 0, 0,0.9);
+    padding:3%;
+  }
+  #layout-6{
+    /* The image used */
+    background-image:     linear-gradient(to bottom, rgb(0, 0, 0), rgba(255, 255, 255, 0));
+    /* Full height */ 
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+      background-attachment: fixed;
+      box-shadow: 30px 0px 30px 30px rgb(0, 0, 0,0.9);
+    padding:3%;
+  }
+.main{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+  }
+  h1{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 80px;
+  }
+  h3{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+  }
+  .btn-warning{
+      padding: 10px 70px 10px 70px;
+  }
+  .bottom{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%,5%);
+  }
+  ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    content: ' ';
+    background: #d4d9df;
+    display: inline-block;
+    position: absolute;
+    left: 22px;
+    width: 2px;
+    height: 80%;
+    margin-top: 10px;
+    z-index: 400;
+}
+ul.timeline > li {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+ul.timeline > li:before {
+    content: ' ';
+    margin-top: 10px;
+    background: white;
+    display: inline-block;
+    position: absolute;
+    border-radius: 50%;
+    left: 15px;
+    width: 15px;
+    height: 15px;
+    z-index: 400;
+}
+ul.timeline > .with-border:before {
+  content: ' ';
+  background: transparent;
+  border: 2px solid white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: 15px;
+  width: 15px;
+  height: 15px;
+  z-index: 400;
+}
+.last-timeline > .with-border:before {
+  content: ' ';
+  background: transparent;
+  border: 2px solid white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  left: 30px; 
+  margin-top: 10px;
+  width: 15px;
+  height: 15px;
+  z-index: 400;
+}
+.top-scores{
+  margin-top: 10%;
+}
+.card{
+  background: rgb(17, 17, 17);
+  width: 450px;
+  border-radius: 15px;
+}
+.img{
+  background-color:  #f0ad4e;
+  width: 68px;
+  height: 65px;
+  border-radius: 50%;
+}
+.img-score{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+/* .img-main{
+  background-image:     linear-gradient(to bottom, rgba(0, 0, 0, 0.692), rgba(255, 255, 255, 0)),url("image/image.png");
+  
+} */
+.img-main{
+    /* The image used */
+    background-image:url("assets/img/image.png");
+    /* Center and scale the image nicely */
+    background-repeat: no-repeat;
+    height: 700px;
+    width: 200px;
+    border-radius: 45%;
+    box-shadow: inset 10px 10px 20px 33px rgba(0,0,0,0.9);
+  }
+  .subscribe{
+    margin-top: 10%;
+    margin-left: 10rem;
+  }
+  .subscribe-form {
+    width: 100%;
+  }
+  
+  .form-label-group {
+    position: relative;
+  }
+  
+  .form-label-group > input,
+  .form-label-group > label {
+    padding: var(--input-padding-y) var(--input-padding-x);
+    background: rgb(17, 17, 17);
+  }
+  
+  .form-label-group > label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    margin-bottom: 0; /* Override default <label> margin */
+    color: #495057;
+    border: 1px solid rgb(17, 17, 17);
+    border-radius: .25rem;
+    transition: all .1s ease-in-out;
+    background: rgb(17, 17, 17);
+
+  }
+  
+  .form-label-group input::-webkit-input-placeholder {
+    color: transparent;
+    background: rgb(17, 17, 17);
+    border: none;
+  }
+  
+  .form-label-group input:-ms-input-placeholder {
+    color: transparent;
+    background: rgb(17, 17, 17);
+    border: none;
+
+  }
+  
+  .form-label-group input::-ms-input-placeholder {
+    color: transparent;
+    background: rgb(17, 17, 17);
+    border: none;
+
+  }
+  
+  .form-label-group input::-moz-placeholder {
+    color: transparent;
+    background: rgb(17, 17, 17);
+    border: none;
+
+  }
+  
+  .form-label-group input::placeholder {
+    color: transparent;
+    background: rgb(17, 17, 17);
+    border: rgb(17, 17, 17);
+  }
+  
+  .form-label-group input:not(:placeholder-shown) {
+    padding-top: calc(var(--input-padding-y) + var(--input-padding-y) * (2 / 3));
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    color: #f0ad4e;
+    background: rgb(17, 17, 17);
+  }
+  
+  .form-label-group input:not(:placeholder-shown) ~ label {
+    padding-top: calc(var(--input-padding-y) / 3);
+    padding-bottom: calc(var(--input-padding-y) / 3);
+    background: rgb(17, 17, 17);
+    font-size: 12px;
+  }
+
+  
+
+
+  /* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 body {
     overflow-x: hidden;
@@ -254,4 +547,4 @@ h3 {
 
 .timeline-body>p+p {
     margin-top: 5px;
-}
+} */
